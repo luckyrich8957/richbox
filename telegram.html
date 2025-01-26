@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>Blind Box Game</title>
+    <script src="https://telegram.org/js/games.js"></script>
+    <script src="https://unpkg.com/vue@2.6.14/dist/vue.js"></script>
+    <script src="uview-ui/index.js"></script>
+    <link rel="stylesheet" href="uview-ui/index.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background: var(--tg-theme-bg-color, #fff);
+            color: var(--tg-theme-text-color, #000);
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <div class="container">
+            <u-navbar :title="'Blind Box Game'" :fixed="true" :border-bottom="true"></u-navbar>
+            <div style="margin-top: 64px;">
+                <u-grid :col="2" :border="true">
+                    <u-grid-item v-for="(box, index) in blindBoxes" :key="index" @click="openBox(index)">
+                        <u-image :src="box.opened ? box.content.image : box.coverImage" width="150px" height="150px"></u-image>
+                        <view class="grid-text">{{ box.opened ? box.content.name : '???' }}</view>
+                    </u-grid-item>
+                </u-grid>
+                <u-modal v-model="showResult" :title="'Congratulations!'" :content="resultMessage"></u-modal>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                blindBoxes: Array(6).fill().map(() => ({
+                    opened: false,
+                    coverImage: '/static/images/box-cover.png',
+                    content: null
+                })),
+                showResult: false,
+                resultMessage: '',
+                items: [
+                    { name: 'Common Item', image: '/static/images/common.png', probability: 0.6 },
+                    { name: 'Rare Item', image: '/static/images/rare.png', probability: 0.3 },
+                    { name: 'Epic Item', image: '/static/images/epic.png', probability: 0.1 }
+                ]
+            },
+            mounted() {
+                // Initialize Telegram game
+                TelegramGameProxy.initGame();
+            },
+            methods: {
+                openBox(index) {
+                    if (this.blindBoxes[index].opened) return;
+                    
+                    const random = Math.random();
+                    let selectedItem = null;
+                    let prob = 0;
+                    
+                    for (const item of this.items) {
+                        prob += item.probability;
+                        if (random <= prob) {
+                            selectedItem = item;
+                            break;
+                        }
+                    }
+
+                    this.blindBoxes[index].opened = true;
+                    this.blindBoxes[index].content = selectedItem;
+                    
+                    this.resultMessage = `You got a ${selectedItem.name}!`;
+                    this.showResult = true;
+
+                    // Send score to Telegram
+                    const score = this.calculateScore();
+                    TelegramGameProxy.shareScore(score);
+                },
+                calculateScore() {
+                    return this.blindBoxes.reduce((score, box) => {
+                        if (!box.opened) return score;
+                        if (box.content.name === 'Epic Item') return score + 100;
+                        if (box.content.name === 'Rare Item') return score + 50;
+                        return score + 10;
+                    }, 0);
+                }
+            }
+        });
+    </script>
+</body>
+</html>

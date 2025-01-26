@@ -1,0 +1,30 @@
+@font-face {
+  font-family: "custom-icon"; /* Project id 3335411 */
+  src: 
+       url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAVsAAsAAAAACmQAAAUfAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHFQGYACDMgqHSIZsATYCJAMUCwwABCAFhQsHUBs6CVFUTopkX2DbsCcYG9nYcYdDRy4TRyDEtaAUSPWyCpUoAoRusPxH/77ODf68ScZUBe+2gkoBJcCmyP/lVb85gGoWyhCqpNNKv6QyYLIAT5KOoM/L8+/vzvUfm9oFKZgkCUnVxKxkm6Zohg5g4nnh7j/f/Uq3BrcExj6tU9RsVtCCfVvAfB51UUF4pwnEpwG7WpAv+cGHgABKijTKKa+kBhy3TmIGX2o2niArpI1lOsFa0hItTGIpbH0PLHSBBtipvAOAjdHH0w9RsYCRjX2aljW3By6813zp49J/CfAHAhwIVjOABHBAws70tLdbp1El4oRIqqi/UysBUCwM+zQft3w8/qXPGDLR2eTKsQLsXP94HGhgSx0ASiTixvE9DBj82YIBwZ/jGAj436cFB1muVwAXQDMA3QyIuAMnCeJ8TIJjmY2tjcLWw1P4uDk6Dt2tcVhBWrlmBynu1yHbNGPxTm33oB5IgYy12wH3OoHs4F+0Tdk2ovu2vGsQugt5RwO6B3nnAPQArzYo0/yji49pxYIjiw7P3eN39n7drfkFj++mrPW+fxfSwdgbuduPUZ3cTbx21GkA0t0XNRv8Fh96+vDxaenMk0g78mzph8dfoo4dJvnVtNUnST4XjdVYTckVzzi2zYMOnIG0x2OIbBV2oEEpaucfQiJvXrJg0xLpgJq6BUWJrEvmQyKRt28GW8VQw9rLyn7+Vb++PYv9+/de0w4Lrvj27l7UtdOrbwef5tGzzbN3u5zl3bXm1avFu+TI7rIFz84J5DUnztpoEE1hJYlFdaElSU2Csr/udt2G6hO5r1aUGFqXVCKaKJtnrrdtqB5Z19yu2dSNdVwypi6rmLmspUk9RpjGytScv2WmKJO6t1Tn5gBc505Y5RrsADFZRcZrqwd6T7xd+emwcJN1x6YXZ/Ykjlvfl25zN8IRP7OmDjaV9EyxjExh2Kk262fx1cdXMP/b9hsLvqVcDLigyYTeyJbeeTP8S66tXB+WV9H3/K3xFvx88eWDLTVKTxO682KVVp5+9Hj/P8QyjDlGxXW9nEYtoopNV01EZXJ4W0r1g4ia5EqWnQ9drY6oSgYboQcR1clVYGPHrri6Oio/blp1fNHx+Nq4ArAR2lMYXxAHNkLH4+vi8sGGyWAoezaSFT1H6za7e0x5uG2O8ZuiNhVcpY4TIqIVEdoJ7YSLRR7uF5WSWzuSG12Fhpa1uOxQ2Zrc4kVOJ52WZH87aWAWAGBe8t0qKrrcbX5elQYA8EN5H8D84qdUrr/k30H2+6ftzin/rHUBgE8z3V7Ca24LGBezMOjN+93KWnr2FQaHlRXV7vF62KXpH7adwa+z5YfqdPN8Hrl773yAaO4ZZOwEQU6LJAqQQpQgn2gDVVCJV8mdbf0wFaoREGUJIPFyFDJOnkHOyyOiAD8IkhpJtAF/qHQl8mRaVFZm87iT4B7UNYDYbs5MuxWkWxQIZwq1hldhRjR28kprGqrDvMBiEEWGRRCJfGzG/HS7CL1MFCE0onnOhPLmvRw2Gjlk4Tk97iZhOkIsSeHhNPUuYd2cCbLxsE4E1gPpMgBhdeOY0UE60U0kREmOSWjL56mCMURGnfj2HohwHYyXpCw7HSRSmIh+xHypuW/HHaYLejGijDBBQ56UH2dH8vZsxoxOlINY6GV6WDcijG5E2CJJONuP7isNW1duesr5/5+u9s4yXVoqfQZ6YYno3cnM9GFWbcC0aM2IneYBsZ3TCjo8qGMBAAA=') format('woff2'),
+       url('//at.alicdn.com/t/font_3335411_hrx5uolo989.ttf?t=1650352981573') format('truetype');
+}
+
+.custom-icon {
+  font-family: "custom-icon" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.custom-icon-ditudingwei:before {
+  content: "\e8a4";
+}
+
+.custom-icon-kefu:before {
+  content: "\e605";
+}
+
+.custom-icon-guanyu_o:before {
+  content: "\eb77";
+}
+
+.custom-icon-shezhi:before {
+  content: "\e8b7";
+}

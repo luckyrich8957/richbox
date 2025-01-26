@@ -1,0 +1,7 @@
+包名:com.jike.chaowan
+别名:com.jike.chaowan
+密码:123456
+
+ios：
+密码:jikechaowan
+boundid:com.jike.chaowan

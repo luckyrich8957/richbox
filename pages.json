@@ -1,0 +1,471 @@
+{
+	"tabBar": {
+		"color": "#B8B8BA",
+		"selectedColor": "#333333",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [
+			{
+				"pagePath": "pages/tabbar/index/index",
+				"iconPath": "static/tabbar/tabbar11.png",
+				"selectedIconPath": "static/tabbar/tabbar12.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/tabbar/mall/mall",
+				"iconPath": "static/tabbar/tabbar31.png",
+				"selectedIconPath": "static/tabbar/tabbar32.png",
+				"text": "商城"
+			},
+			{
+				"pagePath": "pages/tabbar/goods/goods",
+				"iconPath": "static/tabbar/tabbar21.png",
+				"selectedIconPath": "static/tabbar/tabbar22.png",
+				"text": "分类"
+			},
+			{
+				"pagePath": "pages/tabbar/user/user",
+				"iconPath": "static/tabbar/tabbar41.png",
+				"selectedIconPath": "static/tabbar/tabbar42.png",
+				"text": "我的"
+			}
+		]
+	},
+	"easycom": {
+		"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [
+		{
+			"path": "pages/tabbar/index/index",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationStyle": "custom",
+				"mp-alipay": {
+				   "transparentTitle": "always",
+				   "titlePenetrate": "YES"
+				}
+			}
+
+		},
+		{
+			"path": "pages/good/wireless",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": false,
+				"mp-alipay": {
+				   "transparentTitle": "always",
+				   "titlePenetrate": "YES"
+				}
+			}
+			
+		},
+		{
+			"path": "pages/tabbar/goods/goods",
+			"style": {
+				"navigationBarTitleText": "分类",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/reward/reward",
+			"style": {
+				"navigationBarTitleText": "盒柜",
+				"enablePullDownRefresh": false 
+			}
+		},
+		{
+			"path": "pages/tabbar/user/user",
+			"style": {
+				"navigationBarTitleText": "我的",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/search/search",
+			"style": {
+				"navigationBarTitleText": "搜索列表",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/coupon/coupon",
+			"style": {
+				"navigationBarTitleText": "优惠劵",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "登录",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#f8f8f8"
+			}
+		},
+		{
+			"path": "pages/login/phone",
+			"style": {
+				"navigationBarTitleText": "登录",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#fff"
+			}
+		},
+		{
+			"path": "pages/user/setting",
+			"style": {
+				"navigationBarTitleText": "设置",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/user/message",
+			"style": {
+				"navigationBarTitleText": "消息",
+				"enablePullDownRefresh": false
+				
+			}
+		},
+		{
+			"path": "pages/user/collection",
+			"style": {
+				"navigationBarTitleText": "我的收藏",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/good/giving",
+			"style": {
+				"navigationBarTitleText": "奖品赠送",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/good/receive",
+			"style": {
+				"navigationBarTitleText": "奖品领取",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/money/list",
+			"style": {
+				"navigationBarTitleText": "晶石",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/money/Kcode",
+			"style": {
+				"navigationBarTitleText": "K币",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/activity/share",
+			"style": {
+				"navigationBarTitleText": "邀请赚钱",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/good/integral",
+			"style": {
+				"navigationBarTitleText": "积分商城",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/good/map",
+			"style": {
+				"navigationBarTitleText": "图鉴",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#212024",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/good/debris",
+			"style": {
+				"navigationBarTitleText": "图鉴详情",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#212024",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/user/address",
+			"style": {
+				"navigationBarTitleText": "收货地址",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/user/pushAddress",
+			"style": {
+				"navigationBarTitleText": "添加收货地址",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/activity/treasure",
+			"style": {
+				"navigationBarTitleText": "藏宝阁",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/user/delivery",
+			"style": {
+				"navigationBarTitleText": "申请发货 ",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/user/choose",
+			"style": {
+				"navigationBarTitleText": "收货地址",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/user/complaints",
+			"style": {
+				"navigationBarTitleText": "问题投诉",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/login/autoLogin",
+			"style": {
+				"navigationBarTitleText": "登录",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/user/nickname",
+			"style": {  
+				"navigationBarTitleText": "修改昵称",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/good/ordinary",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom",
+				
+				"navigationBarTextStyle": "white",
+				"mp-alipay": {
+				   "transparentTitle": "always",
+				   "titlePenetrate": "YES"
+				}
+			}
+		},
+		
+		{
+			"path": "pages/good/one",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "white",
+				"mp-alipay": {
+				   "transparentTitle": "always",
+				   "titlePenetrate": "YES"
+				}
+			}
+			
+		},
+		{
+			"path": "pages/list/box",
+			"style": {
+				"navigationBarTitleText": "箱子列表",
+				"navigationBarBackgroundColor": "#212024",
+				"enablePullDownRefresh": false,
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/list/egg",
+			"style": {
+				"navigationBarTitleText": "扭蛋机列表",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#212024",
+				"navigationBarTextStyle": "white"
+			}
+
+		}, {
+			"path": "pages/good/open",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "white",
+				"mp-alipay": {
+				   "transparentTitle": "always",
+				   "titlePenetrate": "YES"
+				}
+			}
+
+
+		}, {
+			"path": "pages/good/Twistedegg",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "white",
+				"mp-alipay": {
+				   "transparentTitle": "always",
+				   "titlePenetrate": "YES"
+				}
+			},
+			"mp-alipay": {
+			   "transparentTitle": "always",
+			   "titlePenetrate": "YES"
+			}
+
+		}, {
+			"path": "pages/user/agreement",
+			"style": {
+				"navigationBarTitleText": "协议",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/tabbar/mall/mall",
+			"style": {
+				"navigationBarTitleText": "商城",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/activity/detail",
+			"style": {
+				"navigationBarTitleText": "活动详情",
+				"enablePullDownRefresh": false
+			}
+
+		},
+		{
+			"path": "pages/web/web",
+			"style": {
+				"navigationBarTitleText": "web-view",
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom"
+			},
+			"mp-alipay": {
+			   "transparentTitle": "always",
+			   "titlePenetrate": "YES"
+			}
+		}
+	    ,{
+            "path" : "pages/good/prize",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/user/service",
+            "style" :
+            {
+                "navigationBarTitleText": "客服",
+                "enablePullDownRefresh": false,
+    "navigationBarBackgroundColor": "#3d3d3d",
+    "navigationBarTextStyle": "white"
+            }
+            
+        },
+        {
+            "path": "pages/admin/admin",
+            "style": {
+                "navigationBarTitleText": "後台管理",
+                "enablePullDownRefresh": false
+            }
+        },
+        {
+            "path": "pages/admin/dashboard",
+            "style": {
+                "navigationBarTitleText": "仪表板",
+                "enablePullDownRefresh": false
+            }
+        },
+        {
+            "path": "pages/admin/blindbox",
+            "style": {
+                "navigationBarTitleText": "盲盒管理",
+                "enablePullDownRefresh": false
+            }
+        },
+        {
+            "path": "pages/admin/eggs",
+            "style": {
+                "navigationBarTitleText": "彩蛋配置",
+                "enablePullDownRefresh": false
+            }
+        },
+        {
+            "path": "pages/admin/analytics",
+            "style": {
+                "navigationBarTitleText": "数据统计",
+                "enablePullDownRefresh": false
+            }
+        },
+        {
+            "path": "pages/admin/users",
+            "style": {
+                "navigationBarTitleText": "用户管理",
+                "enablePullDownRefresh": false
+            }
+        },
+        {
+            "path": "pages/admin/roles",
+            "style": {
+                "navigationBarTitleText": "权限管理",
+                "enablePullDownRefresh": false
+            }
+        },
+        {
+           "path": "pages/admin/monitor",
+           "style": {
+               "navigationBarTitleText": "系统监控",
+               "enablePullDownRefresh": false
+           }
+       },
+       {
+           "path": "pages/admin/tide-coin",
+           "style": {
+               "navigationBarTitleText": "潮幣管理",
+               "enablePullDownRefresh": false
+           }
+       }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": " ",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"mp-alipay": {
+			"allowsBounceVertical": "NO"
+			
+		}
+	},
+	"condition" : {
+		"current": 0,
+		"list": [
+{
+  "pages": [
+    {
+      "path": "pages/good/open",
+      "style": {
+        "navigationBarTitleText": "開盲盒"
+      }
+    }
+  ]
+}
+		]
+	}
+}
